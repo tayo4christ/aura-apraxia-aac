@@ -1,0 +1,17 @@
+Timestamp,Gesture,Phrase
+2025-05-27T23:01:53.928452,yes,"Yes, please."
+2025-05-27T23:02:40.162460,yes,"Yes, please."
+2025-05-27T23:03:43.970129,yes,"Yes, please."
+2025-05-27T23:45:19.123107,goodbye,Unknown gesture
+2025-05-27T23:45:26.052230,goodbye,Unknown gesture
+2025-05-27T23:45:30.386436,no,Unknown gesture
+2025-05-27T23:45:37.130123,goodbye,Unknown gesture
+2025-05-27T23:45:41.979272,goodbye,Unknown gesture
+2025-05-27T23:45:45.098853,stop,Unknown gesture
+2025-05-27T23:45:48.150020,goodbye,Unknown gesture
+2025-05-27T23:48:32.885106,goodbye,Unknown gesture
+2025-05-27T23:56:59.352956,goodbye,Goodbye and take care.
+2025-05-27T23:57:11.847242,no,"No, thank you."
+2025-05-27T23:57:18.334487,stop,Please stop.
+2025-05-27T23:57:27.821997,stop,Please stop.
+2025-05-27T23:57:33.074572,goodbye,Goodbye and take care.

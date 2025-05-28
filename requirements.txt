@@ -1,0 +1,12 @@
+transformers
+torchaudio
+torch
+librosa
+mediapipe
+pyttsx3
+stable-baselines3
+gym
+opencv-python
+scikit-learn
+numpy
+matplotlib
