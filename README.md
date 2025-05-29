@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aura-apraxia-aac-a8qejouwasaqequrhetbfw.streamlit.app/)
+
 ![AURA Architecture](docs/architecture_diagram.png)
 
 # AURA: Adaptive Understanding and Relearning Assistant
