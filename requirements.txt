@@ -2,7 +2,6 @@ transformers
 torchaudio
 torch
 librosa
-mediapipe
 stable-baselines3
 gym
 opencv-python
