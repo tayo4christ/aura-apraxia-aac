@@ -2,6 +2,7 @@ import gym
 from stable_baselines3 import PPO
 from stable_baselines3.common.envs import DummyVecEnv
 
+
 class SimpleTherapyEnv(gym.Env):
     def __init__(self):
         super(SimpleTherapyEnv, self).__init__()
@@ -18,6 +19,7 @@ class SimpleTherapyEnv(gym.Env):
         self.state = (self.state + 1) % 5
         done = False
         return self.state, reward, done, {}
+
 
 if __name__ == "__main__":
     env = DummyVecEnv([lambda: SimpleTherapyEnv()])

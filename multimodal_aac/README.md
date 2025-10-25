@@ -76,7 +76,7 @@ These rules can be edited in the `gesture_to_speech.py` file or dynamically load
 
 ## 🧑‍💻 Author
 
-Created by **Omotayo Omoyemi**  
+Created by **Omotayo Omoyemi**
 Aimed at improving accessibility and communication for underserved user groups.
 
 ---

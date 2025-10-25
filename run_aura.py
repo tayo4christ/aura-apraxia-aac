@@ -1,5 +1,6 @@
 import os
 
+
 def main():
     while True:
         print("\nWelcome to AURA Prototype Launcher\n")
@@ -22,7 +23,7 @@ def main():
             print("\nRunning Speech Error Classification...")
             os.system("python error_classification/log_predictions.py")
             print("✅ Predictions saved to CSV.")
-            
+
             launch_gui = input("Launch Adaptive Therapy GUI now? (y/n): ").lower()
             if launch_gui == "y":
                 os.system("python error_classification/adaptive_therapy_gui.py")
@@ -36,6 +37,7 @@ def main():
 
         else:
             print("Invalid choice. Please try again.")
+
 
 if __name__ == "__main__":
     main()

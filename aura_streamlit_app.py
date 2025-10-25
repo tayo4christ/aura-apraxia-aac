@@ -1,7 +1,5 @@
 import streamlit as st
 import torch
-from datetime import datetime
-import os
 import random
 
 # Dummy classifier for demonstration
@@ -11,17 +9,21 @@ from error_classification.error_classifier_model import error_classifier_model
 EXERCISES = {
     0: ["Say 'cat'", "Say 'dog'", "Say 'ball'"],
     1: ["Say 'sunshine'", "Say 'hospital'", "Say 'calendar'"],
-    2: ["Say 'fish'", "Say 'ship'", "Say 'cheese'"]
+    2: ["Say 'fish'", "Say 'ship'", "Say 'cheese'"],
 }
+
 
 def transcribe_audio(audio_file):
     return "hello world"  # Placeholder for real transcription
 
+
 def detect_gesture():
     return random.choice(["hello", "yes", "no", "stop", "goodbye"])
 
+
 def generate_dummy_input():
     return torch.randn(8, 13, 100)
+
 
 def classify_speech(input_tensor):
     model = error_classifier_model(input_dim=13, hidden_dim=32, output_dim=3)
@@ -29,14 +31,18 @@ def classify_speech(input_tensor):
     predicted = torch.argmax(output, dim=1)
     return predicted.tolist()
 
+
 def recommend_therapy(last_class):
     return random.choice(EXERCISES.get(last_class, ["Say 'apple'"]))
+
 
 # Streamlit UI
 st.set_page_config(page_title="AURA Prototype", layout="centered")
 st.title("🧠 AURA – Apraxia Support Toolkit (Multimodal)")
 
-st.markdown("This app demonstrates speech recognition, error classification, gesture-to-speech output, and adaptive therapy recommendations.")
+st.markdown(
+    "This app demonstrates speech recognition, error classification, gesture-to-speech output, and adaptive therapy recommendations."
+)
 
 # Upload audio
 audio_file = st.file_uploader("Upload a speech sample (.wav)", type=["wav"])
@@ -63,6 +69,6 @@ if st.button("Simulate Gesture Detection"):
         "yes": "Yes, please.",
         "no": "No, thank you.",
         "stop": "Please stop.",
-        "goodbye": "Goodbye and take care."
+        "goodbye": "Goodbye and take care.",
     }.get(gesture, "[Unknown gesture]")
     st.write(f"✋ Detected: **{gesture}** → 🗣️ **{phrase}**")

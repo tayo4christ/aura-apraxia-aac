@@ -39,6 +39,7 @@ last_gesture = None
 gesture_start_time = 0
 speak_threshold = 1.2  # seconds
 
+
 def recognize_gesture(landmarks):
     thumb_tip = landmarks[4]
     index_tip = landmarks[8]
@@ -55,6 +56,7 @@ def recognize_gesture(landmarks):
         return "stop"
     return "yes"
 
+
 def speak_and_log(gesture):
     phrase = GESTURE_PHRASES.get(gesture, "Unknown gesture")
     tts_engine.say(phrase)
@@ -65,6 +67,7 @@ def speak_and_log(gesture):
     with open(log_file, "a", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([datetime.now().isoformat(), gesture, phrase])
+
 
 # Open webcam
 cap = cv2.VideoCapture(0)
@@ -91,7 +94,7 @@ while cap.isOpened():
 
             mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
 
-    cv2.imshow('Gesture-to-Speech (GUI Mode)', frame)
+    cv2.imshow("Gesture-to-Speech (GUI Mode)", frame)
     root.update()
     if cv2.waitKey(5) & 0xFF == 27:
         break
