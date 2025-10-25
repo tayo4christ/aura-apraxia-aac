@@ -1,0 +1,33 @@
+@startuml
+title AURA System Architecture
+
+actor User
+User --> Input
+
+package "Input" {
+  [Speech Input] as SI
+  [Gesture Input] as GI
+}
+
+package "AI Processing" {
+  [Speech Recognition\n(Wav2Vec2)] as SR
+  [Gesture Recognition\n(MediaPipe)] as GR
+  [Error Detection\n(CNN + BiLSTM)] as ED
+  [Adaptive Therapy\n(Reinforcement Learning)] as AT
+  [Multimodal AAC\n(TTS)] as AAC
+}
+
+package "Applications" {
+  [Gamified Interface] as Game
+  [Clinician Dashboard] as Dash
+}
+
+package "User Feedback" {
+  [Monitoring & Feedback]
+}
+
+SI --> SR --> ED --> AT
+GI --> GR --> AAC --> Dash
+AT --> Game --> Dash
+Dash --> [Monitoring & Feedback]
+@enduml

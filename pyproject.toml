@@ -1,0 +1,41 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aura-apraxia-aac"
+version = "0.1.0"
+description = "AURA: Adaptive Understanding and Relearning Assistant for Apraxia of Speech"
+authors = [{ name = "Omotayo Omoyemi" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit",
+    "torch",
+    "mediapipe",
+    "pyttsx3",
+    "opencv-python",
+    "pydantic-settings",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F"]
+ignore = ["E501"]
+exclude = ["venv", ".venv", "build", "dist"]
+# auto-fix when run manually with --fix
+fix = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["."]

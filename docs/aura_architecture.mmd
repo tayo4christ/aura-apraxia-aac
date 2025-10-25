@@ -1,0 +1,11 @@
+graph TD
+  A[Speech / Gesture Input] --> B[Speech Recognition (Wav2Vec2)]
+  A --> C[Gesture Recognition (MediaPipe)]
+  B --> D[Error Detection (CNN + BiLSTM)]
+  D --> E[Adaptive Therapy (RL)]
+  C --> F[Multimodal AAC Output (TTS)]
+  E --> G[Gamified Interface]
+  E --> H[Clinician Dashboard]
+  F --> H
+  G --> H
+  H --> I[User Feedback & Monitoring]

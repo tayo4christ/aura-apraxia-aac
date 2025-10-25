@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Envs & tooling
+.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets / env
+.env
+.env.*
+
+# Data / logs
+*.log
+*.csv
+adaptive_therapy_logs/
+multimodal_aac/gesture_log.csv
