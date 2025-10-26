@@ -1,18 +1,29 @@
 import streamlit as st
-import torch
 import random
 
-# Config (new)
+# Config
 from utils.config import settings
 
-# Dummy classifier for demonstration
-from error_classification.error_classifier_model import error_classifier_model
+# ---- Torch import is optional (guarded) ----
+TORCH_OK = True
+TORCH_ERR = ""
+try:
+    import torch  # type: ignore
+except Exception as e:
+    TORCH_OK = False
+    TORCH_ERR = f"{type(e).__name__}: {e}"
+
 
 # ----- runtime device selection (uses config) -----
-if settings.DEVICE.lower() == "auto":
-    _device = "cuda" if torch.cuda.is_available() else "cpu"
-else:
-    _device = settings.DEVICE.lower()
+def pick_device() -> str:
+    if not TORCH_OK:
+        return "cpu"
+    if settings.DEVICE.lower() == "auto":
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    return settings.DEVICE.lower()
+
+
+_DEVICE = pick_device()
 
 # ----- dummy therapy task map -----
 EXERCISES = {
@@ -22,7 +33,7 @@ EXERCISES = {
 }
 
 
-def transcribe_audio(audio_file):
+def transcribe_audio(_audio_file):
     # Placeholder for real transcription
     return "hello world"
 
@@ -32,13 +43,22 @@ def detect_gesture():
 
 
 def generate_dummy_input():
-    # batch=8, features=13, seq_len=100
-    return torch.randn(8, 13, 100, device=_device)
+    if TORCH_OK:
+        return torch.randn(8, 13, 100, device=_DEVICE)
+    # Fallback without torch
+    return [[[0.0] * 100 for _ in range(13)] for _ in range(8)]
 
 
 def classify_speech(input_tensor):
+    """Lazy import model & torch. If unavailable, return a stable fake result."""
+    if not TORCH_OK:
+        return [0] * 8  # deterministic fallback classes
+
+    # Import inside function so app can still start if torch/model is missing
+    from error_classification.error_classifier_model import error_classifier_model
+
     model = error_classifier_model(input_dim=13, hidden_dim=32, output_dim=3).to(
-        _device
+        _DEVICE
     )
     output = model(input_tensor)
     predicted = torch.argmax(output, dim=1)
@@ -55,13 +75,13 @@ def recommend_therapy(last_class):
 st.set_page_config(page_title=settings.APP_NAME, layout="centered")
 st.title("🧠 AURA – Apraxia Support Toolkit (Multimodal)")
 
-# Sidebar: runtime info from config
 with st.sidebar:
     st.header("⚙️ Runtime")
-    st.write(f"**Device:** `{_device}`")
+    st.write(f"**Device:** `{_DEVICE}`")
     st.write(f"**Demo mode:** `{settings.DEMO_MODE}`")
     st.write(f"**Model path:** `{settings.MODEL_PATH}`")
-    st.caption("Set via .env or environment variables.")
+    if not TORCH_OK:
+        st.error("Torch unavailable; using fallback classifier.\n\n" + TORCH_ERR)
 
 st.markdown(
     "This app demonstrates speech recognition, error classification, "
@@ -81,18 +101,18 @@ if audio_file:
     predictions = classify_speech(tensor_input)
     st.write("Predicted Error Classes:", predictions)
 
-    last_class = predictions[-1]
+    last_class = predictions[-1] if predictions else 0
     task = recommend_therapy(last_class)
     st.info(f"🧩 Recommended Therapy Task: **{task}**")
-
-# Demo path if no audio and demo is enabled
 elif settings.DEMO_MODE:
     st.subheader("Demo Mode")
     if st.button("Run a demo classification"):
         tensor_input = generate_dummy_input()
         predictions = classify_speech(tensor_input)
         st.write("Predicted Error Classes (demo):", predictions)
-        st.info(f"🧩 Suggested Task: **{recommend_therapy(predictions[-1])}**")
+        st.info(
+            f"🧩 Suggested Task: **{recommend_therapy(predictions[-1] if predictions else 0)}**"
+        )
 
 st.subheader("Gesture-to-Speech AAC Preview")
 if st.button("Simulate Gesture Detection"):
