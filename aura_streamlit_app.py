@@ -75,17 +75,34 @@ def recommend_therapy(last_class):
 st.set_page_config(page_title=settings.APP_NAME, layout="centered")
 st.title("🧠 AURA – Apraxia Support Toolkit (Multimodal)")
 
+# --- Sidebar Information ---
 with st.sidebar:
     st.header("⚙️ Runtime")
     st.write(f"**Device:** `{_DEVICE}`")
     st.write(f"**Demo mode:** `{settings.DEMO_MODE}`")
     st.write(f"**Model path:** `{settings.MODEL_PATH}`")
-    if not TORCH_OK:
-        st.error("Torch unavailable; using fallback classifier.\n\n" + TORCH_ERR)
 
+    # Friendly message if Torch isn't available
+    if not TORCH_OK:
+        st.info(
+            "Running in **lightweight demo mode** — "
+            "Torch is not installed, so a fallback classifier is being used."
+        )
+    else:
+        st.success("✅ Torch available — full model mode active!")
+
+# --- Description ---
 st.markdown(
-    "This app demonstrates speech recognition, error classification, "
-    "gesture-to-speech output, and adaptive therapy recommendations."
+    """
+    This demo showcases **AURA**, an assistive AI system for individuals with Apraxia of Speech.
+    It integrates:
+    - 🎙️ Speech recognition
+    - 🧩 Error classification
+    - ✋ Gesture-to-speech communication
+    - 💡 Adaptive therapy task recommendations
+
+    *(Running locally? Torch-based models will load automatically.)*
+    """
 )
 
 # Upload audio
