@@ -1,0 +1,12 @@
+# Local / research dependencies (NOT for Streamlit Cloud)
+torch
+torchaudio
+librosa
+mediapipe
+pyttsx3
+stable-baselines3
+gym
+opencv-python
+scikit-learn
+matplotlib
+transformers
