@@ -1,4 +1,4 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aura-apraxia-aac-a8qejouwasaqequrhetbfw.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aura-apraxia-aac-rnkcwedsqwp7nwyg9umbx7.streamlit.app/)
 
 ![AURA Architecture](docs/architecture_diagram.png)
 
