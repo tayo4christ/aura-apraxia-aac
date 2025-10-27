@@ -71,5 +71,19 @@ This is a research prototype. Contributions are welcome.
 
 ---
 
+### 💡 Research Motivation
+AURA was inspired by the need for inclusive, AI-driven therapeutic tools that assist individuals with **Apraxia of Speech (AOS)** — a motor speech disorder affecting articulation and communication.
+By integrating **speech recognition**, **error detection**, and **gesture-based AAC**, AURA bridges accessibility gaps for users who cannot rely solely on verbal communication.
+
+---
+
+### 🌍 Accessibility Impact
+- Promotes early intervention and personalized therapy for children and adults with AOS.
+- Provides a scalable assistive system adaptable to other speech disorders.
+- Aligns with the UN Sustainable Development Goals (SDG 3 & SDG 10):
+  _Good Health and Well-being_ and _Reduced Inequalities_.
+
+---
+
 Created by Omotayo Omoyemi
 GitHub: [tayo4christ](https://github.com/tayo4christ)
