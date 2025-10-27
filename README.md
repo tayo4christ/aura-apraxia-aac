@@ -72,16 +72,18 @@ This is a research prototype. Contributions are welcome.
 ---
 
 ### 💡 Research Motivation
-AURA was inspired by the need for inclusive, AI-driven therapeutic tools that assist individuals with **Apraxia of Speech (AOS)** — a motor speech disorder affecting articulation and communication.
-By integrating **speech recognition**, **error detection**, and **gesture-based AAC**, AURA bridges accessibility gaps for users who cannot rely solely on verbal communication.
+AURA was conceived as part of a broader research effort to build inclusive AI systems that bridge communication barriers for individuals with Apraxia of Speech (AOS) and users of Makaton — a language combining signs, symbols, and speech.
+The project explores the intersection of AI-driven speech recognition, error detection, and gesture-based communication, aiming to create a seamless multimodal translation framework.
+This aligns with ongoing research into how machine learning and multimodal interfaces can extend assistive communication beyond traditional therapy environments and into everyday contexts.
 
 ---
 
 ### 🌍 Accessibility Impact
-- Promotes early intervention and personalized therapy for children and adults with AOS.
-- Provides a scalable assistive system adaptable to other speech disorders.
-- Aligns with the UN Sustainable Development Goals (SDG 3 & SDG 10):
-  _Good Health and Well-being_ and _Reduced Inequalities_.
+
+- Empowers individuals with speech or motor planning difficulties to communicate through AI-assisted multimodal tools.
+- Promotes early, adaptive, and remote intervention in therapeutic contexts.
+- Supports inclusive education and digital accessibility for users of Makaton and related AAC systems.
+- Advances the UN Sustainable Development Goals (SDG 3 – Good Health and Well-being, and SDG 10 – Reduced Inequalities) by making assistive technology scalable and research-driven.
 
 ---
 
