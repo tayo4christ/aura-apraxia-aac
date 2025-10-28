@@ -27,6 +27,17 @@ See the image above for an overview of AURA’s layered system, which includes:
 - **Applications:** Gamified therapy, AAC support, caregiver dashboard
 - **User Feedback:** Real-time, multimodal interaction
 
+### 🧠 AI Model Overview
+
+| Component | Technique / Model | Function |
+|------------|------------------|-----------|
+| Speech Recognition | Wav2Vec2 (Transformers) | Converts disordered speech to text |
+| Error Detection | CNN–BiLSTM | Classifies articulation and phonemic errors |
+| Adaptive Therapy | Reinforcement Learning | Dynamically adjusts therapy difficulty |
+| Gesture-to-Speech AAC | Mediapipe + TTS | Translates Makaton-style gestures into speech |
+| Interface | Streamlit | Provides interactive multimodal feedback |
+
+
 ## 🚀 Quick Start
 
 Install dependencies:
