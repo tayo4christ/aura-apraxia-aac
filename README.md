@@ -29,6 +29,7 @@ See the image above for an overview of AURA’s layered system, which includes:
 
 ### 🧠 AI Model Overview
 
+Below is a high-level summary of the machine learning and AI techniques powering AURA:
 | Component | Technique / Model | Function |
 |------------|------------------|-----------|
 | Speech Recognition | Wav2Vec2 (Transformers) | Converts disordered speech to text |
