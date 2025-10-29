@@ -99,5 +99,23 @@ This aligns with ongoing research into how machine learning and multimodal inter
 
 ---
 
+### 📊 Evaluation Plan
+AURA’s future evaluations will focus on both **technical performance** and **user-centered impact**:
+- **Speech Accuracy:** Measure transcription and classification precision across disordered speech datasets.
+- **Therapy Adaptation:** Assess response times and reinforcement effectiveness using simulated interaction data.
+- **User Experience:** Conduct usability reviews with educators and speech therapists to refine multimodal feedback design.
+- **System Efficiency:** Benchmark model inference and latency across devices for real-world deployment.
+
+---
+
+### 🔭 Future Research Directions
+- Integrate **multilingual Makaton translation** for broader accessibility.
+- Expand **error classification datasets** to include diverse speech conditions.
+- Develop **privacy-preserving AI models** for healthcare compliance.
+- Explore **Edge AI deployment** for low-power, offline therapy support.
+- Investigate **cross-modal learning** between speech and gestures to improve adaptive accuracy.
+
+---
+
 Created by Omotayo Omoyemi
 GitHub: [tayo4christ](https://github.com/tayo4christ)
