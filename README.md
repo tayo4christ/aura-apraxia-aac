@@ -1,8 +1,18 @@
+# 🧠 AURA: Adaptive Understanding and Relearning Assistant
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aura-apraxia-aac-rnkcwedsqwp7nwyg9umbx7.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)
+![Build](https://img.shields.io/github/actions/workflow/status/tayo4christ/aura-apraxia-aac/ci.yml?label=CI)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+
+> AI-powered multimodal therapy assistant that integrates speech recognition, error detection, and gesture-based AAC for individuals with Apraxia of Speech and Makaton users.
+
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aura-apraxia-aac-rnkcwedsqwp7nwyg9umbx7.streamlit.app/)
 
 ![AURA Architecture](docs/architecture_diagram.png)
-
-# AURA: Adaptive Understanding and Relearning Assistant
 
 AURA is an AI-powered therapeutic platform for supporting individuals with Apraxia of Speech (AOS). It combines speech recognition, adaptive therapy, and multimodal communication tools to support personalized and accessible intervention.
 
