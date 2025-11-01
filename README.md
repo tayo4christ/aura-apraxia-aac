@@ -126,6 +126,24 @@ AURA’s future evaluations will focus on both **technical performance** and **u
 - Investigate **cross-modal learning** between speech and gestures to improve adaptive accuracy.
 
 ---
+### 📚 Citation
+
+If you reference or build upon **AURA** in your research, projects, or publications, please cite it as:
+
+```bibtex
+@misc{omoyemi2025aura,
+  author       = {Omotayo Omoyemi},
+  title        = {AURA: Adaptive Understanding and Relearning Assistant for Apraxia of Speech},
+  year         = {2025},
+  howpublished = {\url{https://github.com/tayo4christ/aura-apraxia-aac}},
+  note         = {AI-powered multimodal therapy toolkit integrating speech recognition, error classification, and adaptive reinforcement learning.}
+}
+🔗 References
+Omoyemi, O. (2025). Gesture as Code: Rethinking Programming Through Multimodal Interaction with AI for Apraxia Therapy.
+Presented at The End of Programming as We Know It — Envisioning Radical Re-Conceptualizations of Co-Coding with AI,
+Workshop at Aarhus 2025 Conference (Denmark).
+🔗 Workshop Submissions
+🔗 Workshop Invitation
 
 Created by Omotayo Omoyemi
-GitHub: [tayo4christ](https://github.com/tayo4christ)
+GitHub: tayo4christ
