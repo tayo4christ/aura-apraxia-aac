@@ -82,6 +82,7 @@ streamlit run aura_streamlit_app.py
 ## 📚 Project Status
 
 This is a research prototype, combining real AI models with simulated logic. It is under active development and testing with plans for iterative refinement.
+> See the full [Model Card](MODEL_CARD.md) for intended use, limitations, and responsible-AI notes.
 
 ## 🧠 License
 
