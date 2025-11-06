@@ -6,6 +6,9 @@
 ![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)
 ![Build](https://img.shields.io/github/actions/workflow/status/tayo4christ/aura-apraxia-aac/ci.yml?label=CI)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+![Research](https://img.shields.io/badge/Research-Aarhus%202025%20%26%20ICSIE%202024-blue?style=flat-square)
+![Ethical AI](https://img.shields.io/badge/Responsible%20AI-Ethics%20%26%20Accessibility-green?style=flat-square)
+
 
 > AI-powered multimodal therapy assistant that integrates speech recognition, error detection, and gesture-based AAC for individuals with Apraxia of Speech and Makaton users.
 
