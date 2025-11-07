@@ -1,0 +1,13 @@
+name: "AURA: Adaptive Understanding and Relearning Assistant"
+description: "AI-powered multimodal therapy toolkit for Apraxia of speech-recognition."
+keywords:
+  - ai
+  - accessibility
+  - apraxia
+  - multimodal
+  - speech-recognition
+  - gesture-recognition
+  - reinforcement-learning
+  - streamlit
+license: MIT
+author: Omotayo Omoyemi
