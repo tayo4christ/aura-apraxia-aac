@@ -149,6 +149,17 @@ AURA’s future evaluations will focus on both **technical performance** and **u
 
 ---
 
+### 🏛️ Academic Impact
+
+AURA has been featured in international research venue that explore the intersection of **AI, multimodal communication, and assistive technology**:
+
+- **Aarhus 2025 Workshop:** *The End of Programming as We Know It — Envisioning Radical Re-Conceptualizations of Co-Coding with AI*
+  *(Position Paper: “Gesture as Code: Rethinking Programming Through Multimodal Interaction with AI for Apraxia Therapy”)*
+
+These recognitions highlight AURA’s contribution to inclusive, research-driven AI for communication accessibility.
+
+---
+
 ### 🔗 References
 - **Omoyemi, O. (2025).** *Gesture as Code: Rethinking Programming Through Multimodal Interaction with AI for Apraxia Therapy.*
   Presented at **The End of Programming as We Know It — Envisioning Radical Re-Conceptualizations of Co-Coding with AI**,
