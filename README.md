@@ -120,6 +120,13 @@ AURA was conceived as part of a broader research effort to build inclusive AI sy
 The project explores the intersection of AI-driven speech recognition, error detection, and gesture-based communication, aiming to create a seamless multimodal translation framework.
 This aligns with ongoing research into how machine learning and multimodal interfaces can extend assistive communication beyond traditional therapy environments and into everyday contexts.
 
+> 🧩 **Related Research:**
+> AURA builds on earlier research into **AI-assisted translation between Makaton signs and English**,
+> extending that work into therapeutic contexts for individuals with **Apraxia of Speech**.
+> The two systems share a unified goal of advancing inclusive AI for communication accessibility.
+> 🔗 [View Makaton-to-English Project](https://github.com/tayo4christ/makaton-gesture-recognition)
+
+
 ---
 
 ### 🌍 Accessibility Impact
