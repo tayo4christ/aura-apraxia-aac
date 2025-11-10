@@ -129,6 +129,15 @@ This aligns with ongoing research into how machine learning and multimodal inter
 
 ---
 
+### 🧬 Research Lineage
+
+![Research Lineage](docs/research_lineage.png)
+
+This diagram illustrates how AURA evolved from the **Makaton-to-English translation project**
+towards a broader research vision that integrates **speech recognition, gesture analysis, and adaptive reinforcement learning** for inclusive therapy and communication accessibility.
+
+---
+
 ### 🌍 Accessibility Impact
 
 - Empowers individuals with speech or motor planning difficulties to communicate through AI-assisted multimodal tools.
