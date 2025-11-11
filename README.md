@@ -8,6 +8,9 @@
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 ![Research](https://img.shields.io/badge/Research-Aarhus%202025%20%26%20ICSIE%202024-blue?style=flat-square)
 ![Ethical AI](https://img.shields.io/badge/Responsible%20AI-Ethics%20%26%20Accessibility-green?style=flat-square)
+[![Cite AURA](https://img.shields.io/badge/Cite-AURA%20BibTeX-blue?style=flat-square)](#-citation)
+
+
 
 
 > AI-powered multimodal therapy assistant that integrates speech recognition, error detection, and gesture-based AAC for individuals with Apraxia of Speech and Makaton users.
