@@ -9,6 +9,7 @@ This document tracks notable updates, improvements, and research milestones for 
 - Planned: Future integration of stronger gesture models for Apraxia therapy.
 - Planned: Expanded speech datasets for more realistic evaluation.
 - Planned: Refinement of adaptive therapy logic with reinforcement learning.
+- docs: add detailed evaluation protocol for AURA (metrics, datasets, and study designs)
 
 ---
 

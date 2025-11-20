@@ -157,6 +157,9 @@ AURA’s future evaluations will focus on both **technical performance** and **u
 - **User Experience:** Conduct usability reviews with educators and speech therapists to refine multimodal feedback design.
 - **System Efficiency:** Benchmark model inference and latency across devices for real-world deployment.
 
+For a full breakdown of metrics, datasets, and study designs, see the detailed [Evaluation Protocol](docs/EVALUATION_PROTOCOL.md).
+
+
 ---
 
 ### 🔭 Future Research Directions
