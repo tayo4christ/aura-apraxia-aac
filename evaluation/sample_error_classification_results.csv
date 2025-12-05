@@ -1,0 +1,13 @@
+true_label,predicted_label
+substitution,substitution
+substitution,substitution
+substitution,omission
+substitution,distortion
+omission,omission
+omission,substitution
+omission,omission
+omission,distortion
+distortion,distortion
+distortion,distortion
+distortion,substitution
+distortion,omission
