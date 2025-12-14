@@ -1,0 +1,39 @@
+@startuml
+title AURA – Sequence (Current Speech-Based Prototype)
+
+actor User
+
+participant "Streamlit UI" as UI
+participant "AURA Orchestrator" as ORCH
+participant "Audio Ingest" as INGEST
+participant "Preprocessing" as PRE
+participant "Feature Extraction" as FE
+participant "ASR (optional)" as ASR
+participant "Error Classifier" as EC
+participant "Therapy Engine" as TE
+participant "AAC Support" as AAC
+participant "Logs / Artifacts" as LOGS
+
+User -> UI : Start session\n(record / upload speech)
+
+UI -> ORCH : Initialise session settings
+ORCH -> INGEST : Load audio input
+
+INGEST -> PRE : Raw audio
+PRE -> FE : Clean segments
+FE -> EC : Acoustic / prosody features
+
+opt Transcription enabled
+    FE -> ASR : Audio / features
+    ASR -> EC : Transcript + timing
+end
+
+EC -> TE : Error profile\n(type, severity, confidence)
+TE -> AAC : Generate cues\n(text / symbol / audio)
+AAC -> UI : Render feedback
+
+UI -> User : Multimodal output\n(text / symbol / audio)
+
+ORCH -> LOGS : Save session logs\n(optional)
+
+@enduml
