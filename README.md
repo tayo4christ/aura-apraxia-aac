@@ -38,6 +38,10 @@
 
 ![AURA Architecture](docs/architecture_diagram.png)
 
+> **Note:** This diagram represents the **target architecture** of AURA.
+> The current prototype implements the **speech-based pipeline**.
+> Gesture input and multimodal sensing are **planned extensions** and are not yet enabled.
+
 AURA is an AI-powered therapeutic platform for supporting individuals with Apraxia of Speech (AOS). It combines speech recognition, adaptive therapy, and multimodal communication tools to support personalized and accessible intervention.
 
 ## 🔧 Modules Included
