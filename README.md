@@ -44,6 +44,19 @@
 
 AURA is an AI-powered therapeutic platform for supporting individuals with Apraxia of Speech (AOS). It combines speech recognition, adaptive therapy, and multimodal communication tools to support personalized and accessible intervention.
 
+## 🔄 System Runtime Flow
+
+To complement the high-level architecture above, AURA includes a detailed
+**sequence diagram** that describes the runtime behaviour of the **current
+speech-based prototype**, including audio ingestion, error classification,
+adaptive therapy, and AAC feedback.
+
+- 📄 **Sequence Diagram (source):** `docs/diagrams/aura_sequence_current_speech.puml`
+- 🖼️ **Sequence Diagram (image):** `docs/diagrams/aura_sequence_current_speech.png`
+
+This diagram reflects the system as currently implemented. Gesture input is
+not part of the active pipeline and is documented as future work.
+
 ## 🔧 Modules Included
 
 | Folder                        | Description                                                  |
