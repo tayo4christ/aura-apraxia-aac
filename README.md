@@ -125,6 +125,17 @@ streamlit run aura_streamlit_app.py
 This is a research prototype, combining real AI models with simulated logic. It is under active development and testing with plans for iterative refinement.
 > See the full [Model Card](MODEL_CARD.md) for intended use, limitations, and responsible-AI notes.
 
+## ⚠️ Limitations & Scope
+
+AURA is a **research prototype**, not a clinical or diagnostic tool.
+
+- The current implementation focuses on a **speech-based pipeline** for Apraxia of Speech.
+- Gesture input and multimodal sensing are **not yet enabled** and are part of planned future work.
+- Evaluation results are based on **simulated data, small-scale testing, and offline analysis**.
+- The system is intended to **support**, not replace, qualified speech and language therapists.
+
+All findings and demonstrations should be interpreted within this research and exploratory context.
+
 ## 🧠 License
 
 MIT License – for research, non-commercial, and educational use.
